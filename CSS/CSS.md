@@ -455,5 +455,89 @@ auto: 超出自动显示滚动条，不超出不显示滚动条
 ### CSS三角
 
 ```html
+<style>
+        .box1 {
+            width: 0;
+            height: 0;
+            border-top: 50px solid pink;
+            border-right: 50px solid red;
+            border-bottom: 50px solid blue;
+            border-left: 50px solid green;
+        }
+        .box2 {
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-top-color: pink;
+            margin: 0 auto;
+        }
+        .jingdong {
+            position: relative;
+            width: 120px;
+            height: 249px;
+            background-color: skyblue;
+        }
+        .jingdong span {
+            position: absolute;
+            right: 15px;
+            top: -10px;
+            width: 0;
+            height: 0;
+            /*为了照顾兼容性*/
+            line-height: 0;
+            font-size: 0;
+            border: 5px solid transparent;
+            border-bottom-color: skyblue;
+        }
+</style>
 ```
+
+### 用户界面样式
+
+##### 鼠标样式cursor
+
+```
+li{cursor: pointer;}
+属性值	default | pointer | move | text | not-allowed
+		默认   |  小手   | 移动 |  文本  | 禁止
+```
+
+##### 轮廓线outline
+
+```
+给表单添加 outline: 0; 或者 outline: none; 样式之后，就可以去掉默认的蓝色边框
+```
+
+### vertical-align 属性的应用
+
+```
+经常用于设置图片或者表单（行内块元素）和文字垂直对齐
+vertical-align: baseline | top | middle | bottom
+解决图片底测空白缝隙：
+1.使用 vertical-align: top | middle | bottom 都可（提倡使用）
+2.把图片转换为块级元素 display: block;
+```
+
+### 溢出文字省略号显示
+
+```html
+<style>
+        div {
+            width: 100px;
+            height: 40px;
+            background-color: pink;
+            margin: 100px auto;
+            /*white-space: normal; 的意思是 文字自动换行*/
+            /*white-space: normal;*/
+            /*1.white-space: nowrap; 的意思是 文字强制一行显示*/
+            white-space: nowrap;
+            /*2.溢出的部分隐藏起来*/
+            overflow: hidden;
+            /*3.文字用省略号替代超出的部分  ellipsis 省略号*/
+            text-overflow: ellipsis;
+        }
+</style>
+```
+
+
 
