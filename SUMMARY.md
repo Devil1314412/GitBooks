@@ -5,7 +5,6 @@
   - [Html总结](./Html/Html.md) 
 - [CSS](./CSS/README.md) 
   - [CSS总结](./CSS/CSS.md) 
-- [Javascript](./JavaScript/README.md)
-  - [Javascript总结](./JavaScript/JavaScriptnote.md) 
-
+- [JavaScript](./JavaScript/README.md)
+  - [JavaScript总结](./JavaScript/JavaScript.md) 
 
